@@ -1,0 +1,33 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+by checking two files with fc-command you get a list of all differences in the file and only the differences. This makes it easier to find a bug because you don't have to review the hole file but just the changings.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+It would be easy to go back to a prior version if there are any unsolved bugs in the current version. Comparision is easy. You have a good overview about changings in the past to control if a bug is already solved
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+Pros:
+You can save commit when a feature is ready or a bugfix is fixed
+The commit will have the chosen size and will not be too big or too small
+You can give every commit a certain description
+
+Cons:
+saving is based on a human being so it can be forgotten
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+When more than one file are connected e.g. html and css it makes sense to compare all files. Maybe not only one file is changed for the same feature, but all.
+If there are only single files like pictures or one document it is much easier just to compare them separately.
+
+How can you use the commands git log and git diff to view the history of files?
+git log
+this command lists all changings in the history of files showing a individual ID, description, date of changing and author for every changing.
+git log --stat
+shows in addition the relative size of each changing
+git diff
+compares all changings between to chosen commits (by ID) showing whether a line is added or substracted and in which file.
+
+How might using version control make you more confident to make changes that could break something?
+It is always easy to go back so it will be no big problem if you create a major bug.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+
