@@ -3,3 +3,20 @@ When I initilize a git directory, git will create a hidden file called .git. I n
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 The staging area is in the middle of working directory and repository so it is no directory but still not a repository. It is quite useful to choose which files you want to be in one commit.
+
+How can you use the staging area to make sure you have one commit per logical change?
+Even if there are changes to several file you can just add those files to the staging areae which you want to commit together. To check which files are in the staging area different to the working directory you can use git diff. To check the differences between staging area and the last commit you can use git diff --staged
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Some situations are when you want to try out different versions or designs of the same programm. with branches you can make those version without changing the master branch with which you can alwas go on.
+
+How do the diagrams help you visualize the branch structure?
+It is easy to see how many branches we have and how often a master branch or even each branch is splited.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+pros automatic merging:
+eindeutige Änderungen am Code werden automatisch übernommen > Zeitersparnis
+for conflicts you always get a hint which line of code is not clear
+you can easily merge two complete branches instead of only two commits.
+cons automatic merging:
+if the checking is not sensitive it may cause errors. Maybe one line is changed only in one version but is needed for another part of code wich is changed in the other version.
